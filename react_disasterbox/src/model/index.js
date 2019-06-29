@@ -22,7 +22,7 @@ class model extends React.Component{
                         
                         return data.json();
                 }).then( data => {
-                        
+                        console.log("Hola Heroku!");
                         this.setState({clientes: data.clients});
                 });
     }
