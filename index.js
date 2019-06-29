@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'react_disasterbox/build')));
 
-app.use('/api', indexRouter);
+app.use('/home', indexRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

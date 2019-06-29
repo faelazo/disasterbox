@@ -18,7 +18,7 @@ class model extends React.Component{
                 }
           };
 
-          fetch('/api', prop_fetch).then(data => {
+          fetch('/home', prop_fetch).then(data => {
                         
                         return data.json();
                 }).then( data => {
