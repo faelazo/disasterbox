@@ -18,7 +18,7 @@ class model extends React.Component{
                 }
           };
 
-          fetch('http://localhost:9000', prop_fetch).then(data => {
+          fetch('/', prop_fetch).then(data => {
                         
                         return data.json();
                 }).then( data => {
