@@ -1,4 +1,5 @@
 import React from 'react';
+import Home from './components/Home';
 
 class model extends React.Component{
 
@@ -22,7 +23,6 @@ class model extends React.Component{
                         
                         return data.json();
                 }).then( data => {
-                        console.log("Hola Heroku!");
                         this.setState({clientes: data.clients});
                 });
     }
@@ -37,6 +37,7 @@ class model extends React.Component{
     render() {
             return (
                   <div id="contenido">
+                        <Home></Home>
                         <p>Prueba de obtención de JSON:</p>
                         <ul>
                               {this.getContent()}
