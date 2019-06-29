@@ -7,7 +7,7 @@ var indexRouter = require('./routes/index');
 
 var app = express();
 
-app.use(cors({origin: 'https://disasterbox.herokuapp.com/'}));
+app.use(cors({origin: 'https://disasterbox.herokuapp.com'}));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
