@@ -1,5 +1,4 @@
 import React from 'react';
-import Home from 'home';
 
 class model extends React.Component{
 
