@@ -43,6 +43,7 @@ class model extends React.Component{
             return (
                   <div id="contenido">
                         {this.getPage()}
+                        <p>Prueba de obtención de JSON:</p>
                         <ul>
                               {this.getContent()}
                         </ul>
