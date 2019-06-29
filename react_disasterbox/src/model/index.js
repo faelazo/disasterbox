@@ -1,4 +1,5 @@
 import React from 'react';
+import Home from 'home';
 
 class model extends React.Component{
 
@@ -34,9 +35,14 @@ class model extends React.Component{
           });
     };
 
+    getPage = () => {
+            return (<Home></Home>);
+    };
+
     render() {
             return (
                   <div id="contenido">
+                        {this.getPage()}
                         <ul>
                               {this.getContent()}
                         </ul>
