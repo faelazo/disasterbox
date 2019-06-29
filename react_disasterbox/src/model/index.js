@@ -1,5 +1,7 @@
 import React from 'react';
-import Home from './components/Home';
+import Header from './home/Header';
+import Content from './home/Content';
+import Footer from './home/Footer';
 
 class model extends React.Component{
 
@@ -23,6 +25,7 @@ class model extends React.Component{
                         
                         return data.json();
                 }).then( data => {
+                      console.log("Hola");
                         this.setState({clientes: data.clients});
                 });
     }
@@ -37,11 +40,9 @@ class model extends React.Component{
     render() {
             return (
                   <div id="contenido">
-                        <Home></Home>
-                        <p>Prueba de obtención de JSON:</p>
-                        <ul>
-                              {this.getContent()}
-                        </ul>
+                        <Header></Header>
+                        <Content></Content>
+                        <Footer></Footer>
                   </div>
             );
     };
