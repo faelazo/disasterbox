@@ -6,7 +6,7 @@ var data = JSON.parse(fs.readFileSync('./data/clients.json'));
 var router  = express.Router();
 
 /* GET home page. */
-router.get('/api', function(req, res, next) {
+router.get('/', function(req, res, next) {
   res.json(data);
 });
 
