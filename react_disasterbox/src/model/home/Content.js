@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Thing from './Thing';
 
-class Content extends Component {
-    render() {
-        return (
-            <div id="Content">
-                <Thing title="Parejas" image="http://www.pngmart.com/files/8/Cards-PNG-Transparent-Image.png"></Thing>
-            </div>
-        );
-    };
+const Content = ({handlerClick}) => {
+
+    return (
+        <div id="Content">
+            <Thing title="Lista de Clientes" image="https://www.a3coaching.com/wp-content/uploads/2017/09/lista.png" handlerClick={handlerClick}></Thing>
+        </div>
+    );
 };
 
 export default Content;
