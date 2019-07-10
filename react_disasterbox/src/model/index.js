@@ -41,46 +41,15 @@ class model extends React.Component{
             console.log(this.state.clients);
 
             return ("");
-/*
-            var cliente = [
-                  {
-                      "id":1,
-                      "name":"Antonio",
-                      "firstname":"Pérez",
-                      "surname":"Rodríguez",
-                      "gender":"V",             
-                      "birthday":"28/03/1980",
-                      "email":"aperezro@prueba.com",
-                      "telephone":"956293847",
-                      "mobile":"645839488",
-                      "vip":1
-                  },{
-                        "id":2,
-                        "name":"Mario",
-                        "firstname":"Gutierrez",
-                        "surname":"Gómez",
-                        "gender":"V",             
-                        "birthday":"08/11/1970",
-                        "email":"mgutierrezgo@prueba.com",
-                        "telephone":"",
-                        "mobile":"663536632",
-                        "vip":0
-                    }];
-
-            return ();*/
       };
 
       getContent = () => {
-
+            console.log("getContent: " + this.state.load);
             switch(this.state.load){
                   case 'home': return (<Content handlerClick={this.handlerClick}></Content>);
                   case 'Lista de Clientes': return (<ListClients handlerClick={this.handlerClick}></ListClients>);
                   default: return (<Content handlerClick={this.handlerClick}></Content>);
             };
-            /*
-            return this.state.clientes.map(item => {
-                        return (<li key={item.id}>{item.name} {item.firstname} {item.surname}</li>)
-            });*/
       };
 
       render() {
