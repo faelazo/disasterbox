@@ -6,7 +6,7 @@ class listClient extends Component{
         super();
         this.state ={clients: []};
     }
-
+/*
     componentDidMount() {
         var prop_fetch = {
             method: 'GET',
@@ -22,7 +22,7 @@ class listClient extends Component{
                 this.setState({clients: data.clients});
         });
     }
-    
+    */
     makeList = () => {
         
         return this.state.clients.map(item => {
