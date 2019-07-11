@@ -3,7 +3,7 @@ import Header from './home/Header';
 import Content from './home/Content';
 import Footer from './home/Footer';
 
-//import ListClients from './listClients';
+import ListClients from './listClients';
 
 class model extends React.Component{
 
@@ -19,8 +19,7 @@ class model extends React.Component{
       }
 
       handlerClick = (boton) => {
-            //this.setState({load: boton});
-            this.getDataClients();
+            this.setState({load: boton});
       };
       
       async getDataClients() {
@@ -48,7 +47,7 @@ class model extends React.Component{
       getContent = () => {
             switch(this.state.load){
                   case 'home': return (<Content handlerClick={this.handlerClick}></Content>);
-                  //case 'Lista de Clientes': return (<ListClients handlerClick={this.handlerClick}></ListClients>);
+                  case 'Lista de Clientes': return (<ListClients handlerClick={this.handlerClick}></ListClients>);
                   default: return (<Content handlerClick={this.handlerClick}></Content>);
             };
       };

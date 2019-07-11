@@ -5,15 +5,21 @@ class listClients extends Component{
     constructor(){
         super();
         this.state ={clients: []};
+        
     }
 
-    componentDidMount() {
+    componentDidMount(){
+        
+        this.getDataClients();
+    }
+
+    async getDataClients() {
         var prop_fetch = {
-            method: 'GET',
-            headers: {
-                  "access-control-allow-origin" : "*",
-                  "Content-type": "application/json; charset=UTF-8"
-            }
+                method: 'GET',
+                headers: {
+                    "access-control-allow-origin" : "*",
+                    "Content-type": "application/json; charset=UTF-8"
+                }
         };
 
         fetch('/listaClientes', prop_fetch).then(data => {
@@ -21,10 +27,14 @@ class listClients extends Component{
         }).then(data => {
                 this.setState({clients: data.clients});
         });
+
+        console.log("Esto es listClients.ComponentDidMount");
+
+        return ("");
     }
     
     makeList = () => {
-        
+
         return this.state.clients.map(item => {
             return (<li key={item.id}>{item.name} {item.firstname} {item.surname}</li>)
         });
