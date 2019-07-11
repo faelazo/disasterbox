@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-class listClient extends Component{
+class listClients extends Component{
 
     constructor(){
         super();
         this.state ={clients: []};
     }
-/*
+
     componentDidMount() {
         var prop_fetch = {
             method: 'GET',
@@ -22,7 +22,7 @@ class listClient extends Component{
                 this.setState({clients: data.clients});
         });
     }
-    */
+    
     makeList = () => {
         
         return this.state.clients.map(item => {
@@ -42,4 +42,4 @@ class listClient extends Component{
     };
 };
 
-export default listClient;
+export default listClients;

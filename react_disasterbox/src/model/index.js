@@ -20,8 +20,9 @@ class model extends React.Component{
 
       handlerClick = (boton) => {
             //this.setState({load: boton});
+            this.getDataClients();
       };
-      /*
+      
       async getDataClients() {
             
             var prop_fetch = {
@@ -39,12 +40,12 @@ class model extends React.Component{
             });
 
             console.log(this.state.clients);
+            console.log("Esto es getDataClients");
 
             return ("");
       };
-      */
+      
       getContent = () => {
-            console.log("getContent: " + this.state.load);
             switch(this.state.load){
                   case 'home': return (<Content handlerClick={this.handlerClick}></Content>);
                   //case 'Lista de Clientes': return (<ListClients handlerClick={this.handlerClick}></ListClients>);
