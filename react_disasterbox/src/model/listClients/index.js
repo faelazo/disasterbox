@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from '@material-ui/core/Button';
 
 class listClients extends Component{
 
@@ -28,25 +29,25 @@ class listClients extends Component{
                 this.setState({clients: data.clients});
         });
 
-        console.log("Esto es listClients.ComponentDidMount");
-
         return ("");
-    }
-    
+    }      
+
     makeList = () => {
 
         return this.state.clients.map(item => {
-            return (<li key={item.id}>{item.name} {item.firstname} {item.surname}</li>)
+            return (
+                <li key={item.id}>{item.name} {item.firstname} {item.surname}</li>
+            );
         });
     };
     
     render(){
         return (
             <div>
-                <ul>
+                <ul component="nav" aria-label="Main mailbox folders">
                     {this.makeList()}
                 </ul>
-                <button onClick={() => {return this.props.handlerClick('home')}}>Volver</button>
+                <Button variant="contained" color="secondary" onClick={() => {return this.props.handlerClick('home')}}>Volver</Button>
             </div>
         );
     };
