@@ -3,22 +3,10 @@ import Header from './home/Header';
 import Content from './home/Content';
 import Footer from './home/Footer';
 
-import ListClients from './listClients';
-
 class model extends React.Component{
 
-      constructor(){
-            super();
-            this.state = {
-                  load: "home"
-            }
-      }
-
-      componentWillMount(){
-            
-      }
-
       handlerClick = (boton) => {
+<<<<<<< HEAD
             this.setState({load: boton});
       };
       
@@ -42,21 +30,28 @@ class model extends React.Component{
             console.log("Esto es getDataClients");
 
             return ("");
+=======
+            
+>>>>>>> master
       };
       
       getContent = () => {
+<<<<<<< HEAD
             switch(this.state.load){
                   case 'home': return (<Content handlerClick={this.handlerClick}></Content>);
                   case 'Lista de Clientes': return (<ListClients handlerClick={this.handlerClick}></ListClients>);
                   default: return (<Content handlerClick={this.handlerClick}></Content>);
             };
+=======
+            return (<Content handlerClick={this.handlerClick}></Content>);
+>>>>>>> master
       };
 
       render() {
             return (
                   <div id="contenido">
                         <Header></Header>
-                        {this.getContent()}
+                        {this.getContent('home')}
                         <Footer></Footer>
                   </div>
             );
