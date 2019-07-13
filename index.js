@@ -3,12 +3,9 @@ var express = require('express');
 var path = require('path');
 var cors = require('cors');
 
-<<<<<<< HEAD
 //var indexRouter = require('./routes/index');
 var listClientRouter = require('./routes/listaClientes');
-=======
-var indexRouter = require('./routes/index');
->>>>>>> master
+var coloresRouter = require('./routes/colores');
 
 var app = express();
 
@@ -21,11 +18,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'react_disasterbox/build')));
 
-<<<<<<< HEAD
 app.use('/listaClientes', listClientRouter);
-=======
-app.use('/home', indexRouter);
->>>>>>> master
+app.use('/colores', coloresRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
