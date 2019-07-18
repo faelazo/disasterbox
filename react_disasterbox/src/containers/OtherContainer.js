@@ -6,7 +6,7 @@ class OtherContainer extends Component{
 
     render(){
         return(
-            <OtherPage handlerInc={this.props.onIncrement} handlerDec={this.props.onDecrement}></OtherPage>
+            <OtherPage handlerInc={this.props.onIncrement} handlerDec={this.props.onDecrement} valor={this.props.valor}></OtherPage>
         );
     };
 };
