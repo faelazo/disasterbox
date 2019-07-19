@@ -1,22 +1,18 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { SET_SITE } from '../actions/LoadedSiteActions';
 import OtherPage from '../components/other';
 
 class OtherContainer extends Component{
 
     render(){
         return(
-            <OtherPage handlerInc={this.props.onIncrement} handlerDec={this.props.onDecrement} valor={this.props.valor}></OtherPage>
+            <OtherPage></OtherPage>
         );
     };
 };
 
-const mapStateToProps = state => {return { valor: state}};
-const mapDispatchToProps = dispatch => {
-    return {
-        onIncrement: () => {return dispatch({type: 'INCREMENT'})},
-        onDecrement: () => {return dispatch({type: 'DECREMENT'})}
-    }
-};
+const mapStateToProps = state => {return {LoadedSite: state.LoadedSiteReducer}};
+const mapDispatchToProps = dispatch => dispatch({type: SET_SITE, payload: "Other"});
 
 export default connect(mapStateToProps, mapDispatchToProps)(OtherContainer);

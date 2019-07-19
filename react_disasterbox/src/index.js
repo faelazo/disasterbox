@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Routes from './routes';
 import { Provider } from 'react-redux';
+import App from './containers/AppContainer';
 import store from './store';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
 const Main = (
     <Provider store={store}>
-        {Routes}
+        <App />
     </Provider>
 );
 

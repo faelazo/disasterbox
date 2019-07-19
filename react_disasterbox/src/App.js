@@ -1,14 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Home from './components/home';
+import Routes from './routes';
 import './App.css';
 
-function App() {
+function App(props) {
   return (
     <div className="App">
       <p>Hola que ase</p>
-      <Home></Home>
-      <Link to="/Other/1" >Other</Link>
+      <Routes />
     </div>
   );
 }
