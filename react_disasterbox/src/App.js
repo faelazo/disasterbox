@@ -5,7 +5,6 @@ import './App.css';
 function App(props) {
   return (
     <div className="App">
-      <p>Hola que ase</p>
       <Routes />
     </div>
   );
