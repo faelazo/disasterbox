@@ -2,8 +2,6 @@ import React from 'react';
 import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core/styles'
 
-import './style.css';
-
 const useStyles = makeStyles(theme => ({
     root: {
         background: 'rgb(100, 109, 149)',

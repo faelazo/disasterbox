@@ -12,7 +12,6 @@ class OtherContainer extends Component{
     };
 };
 
-const mapStateToProps = state => {return {LoadedSite: state.LoadedSiteReducer}};
 const mapDispatchToProps = dispatch => dispatch({type: SET_SITE, payload: "Other"});
 
-export default connect(mapStateToProps, mapDispatchToProps)(OtherContainer);
+export default connect(null, mapDispatchToProps)(OtherContainer);

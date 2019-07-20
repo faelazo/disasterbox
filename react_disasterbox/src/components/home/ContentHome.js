@@ -1,11 +1,26 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
+import { makeStyles } from '@material-ui/core/styles';
 
 import './style.css';
 
+const useStyle = makeStyles(theme => ({
+    root: {
+        position: 'absolute',
+        height: '90%',
+        background: 'rgb(230, 230, 230)',
+        overflowY: 'auto',
+    }
+}));
+
 const ContentHome = () => {
+    
+    const classes = useStyle();
+
     return (
-        <Container id='contentHome' maxWidth='xl'>Content Home</Container>
+        <Container className={classes.root} maxWidth='xl'>
+            <p>Content Home</p>
+        </Container>
     );
 };
 

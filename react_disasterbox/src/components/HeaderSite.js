@@ -7,38 +7,36 @@ import Typography from '@material-ui/core/Typography';
 import MenuItem from '@material-ui/core/MenuItem';
 import SvgIcon from '@material-ui/core/SvgIcon';
 
-import './style.css';
-
 const useStyles = makeStyles(theme => ({
-  root: {
-    flexGrow: 1, 
-    height: 70,
-  },
-  bar: {
-    background: 'rgb(100, 109, 149)',
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
-    fontWeight: 'bold',
-    fontSize: 50,
-    fontFamily: 'barrio'
-  },
-  options: {
-      color: '#FFF',
-      fontWeight: 'bold',
-      fontSize: 20,
-      paddingRight: 5
-  }
+    rootHeader: { 
+        flexGrow: 1, 
+        height: 70,
+    },
+    bar: {
+        background: 'rgb(100, 109, 149)',
+    },
+    menuButton: {
+        marginRight: theme.spacing(2),
+    },
+    title: {
+        flexGrow: 1,
+        fontWeight: 'bold',
+        fontSize: 50,
+        fontFamily: 'barrio'
+    },
+    options: {
+        color: '#FFF',
+        fontWeight: 'bold',
+        fontSize: 20,
+        paddingRight: 5
+    }
 }));
 
 const HeaderHome = () => {
     const classes = useStyles();
 
     return (
-        <div className={classes.root}>
+        <div className={classes.rootHeader}>
             <AppBar position="static" className={classes.bar}>
                 <Toolbar>
                     <Typography variant="h5" className={classes.title}>
