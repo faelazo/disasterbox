@@ -6,9 +6,8 @@ import './style.css';
 
 const useStyle = makeStyles(theme => ({
     root: {
-        position: 'absolute',
-        height: '90%',
-        background: 'rgb(230, 230, 230)',
+        position: "relative",
+        float: "left",
         overflowY: 'auto',
     }
 }));
