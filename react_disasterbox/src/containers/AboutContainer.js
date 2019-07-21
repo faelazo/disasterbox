@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { SET_SITE } from '../actions/LoadedSiteActions';
-import OtherPage from '../components/other';
+import About from '../components/about';
 
-class OtherContainer extends Component{
+class AboutContainer extends Component{
 
     render(){
         return(
-            <OtherPage></OtherPage>
+            <About></About>
         );
     };
 };
 
 const mapDispatchToProps = dispatch => dispatch({type: SET_SITE, payload: "Other"});
 
-export default connect(null, mapDispatchToProps)(OtherContainer);
+export default connect(null, mapDispatchToProps)(AboutContainer);

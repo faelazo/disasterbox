@@ -9,7 +9,7 @@ const useStyles = makeStyles(theme => ({
     }
 }))
 
-const OtherPage = (props) => {
+const About = (props) => {
 
     const classes = useStyles();
 
@@ -20,4 +20,4 @@ const OtherPage = (props) => {
     );
 };
 
-export default OtherPage;
+export default About;

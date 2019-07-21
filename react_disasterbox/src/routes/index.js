@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import Home from '../containers/HomeContainer';
-import Other from '../containers/OtherContainer';
+import About from '../containers/AboutContainer';
 import Counter from '../containers/CounterContainer';
 import NotFound from '../components/errors/NotFound';
 import HeaderHome from '../components/HeaderSite';
@@ -14,7 +14,7 @@ const routing = () => {
             <HeaderHome></HeaderHome>
             <Switch>
                 <Route exact path="/" component={Home} />
-                <Route path="/other" component={Other} />
+                <Route path="/about" component={About} />
                 <Route path="/counter" component={Counter} />
                 <Route component={NotFound} />
             </Switch>
