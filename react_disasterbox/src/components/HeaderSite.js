@@ -11,14 +11,13 @@ import { Box } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
     rootHeader: { 
-        position: "relative",
-        float: "left",
         flexGrow: 1, 
         width: '100%',
+        position: 'fixed',
+        top: 0,
     },
     bar: {
         background: 'rgb(100, 109, 149)',
-        float: 'left',
     },
     menuButton: {
         marginRight: theme.spacing(2),
@@ -34,7 +33,6 @@ const useStyles = makeStyles(theme => ({
         fontWeight: 'bold',
         fontSize: 20,
         paddingRight: 5,
-        float: 'left',
     }
 }));
 
