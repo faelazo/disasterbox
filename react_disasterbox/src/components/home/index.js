@@ -12,10 +12,10 @@ const useStyles = makeStyles(theme => ({
     rootHeader: { 
         width: '100%',
         position: 'fixed',
-        marginTop: 54,
+        marginTop: 58,
     },
     bar: {
-        maxHeight: 50,
+        maxHeight: 54,
         background: 'transparent',
     },
     title: {

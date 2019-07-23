@@ -17,14 +17,14 @@ const useStyles = makeStyles(theme => ({
     rootHeader: { 
         width: '100%',
         position: 'fixed',
-        marginTop: 50,
+        marginTop: 58,
     },
     bar: {
         maxHeight: 54,
         background: 'transparent',
     },
     title: {
-        flexGrow: 1,
+        flex: 1,
     },
     options: {
         color: 'rgb(100,100,100)',
