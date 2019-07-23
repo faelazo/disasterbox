@@ -16,8 +16,8 @@ const Blog = () => {
     const classes = useStyles();
 
     return (
-        <Container className={classes.root}>
-            <Bread path={["Blog", "Sample"]}></Bread>
+        <Container className={classes.root} maxWidth="xl">
+            <Bread path={["Blog"]} />
             <Link to="/blog/sample/counter">Contador</Link>
         </Container>
     );
