@@ -18,7 +18,7 @@ const Counter = (props) => {
 
     return (
         <Container className={classes.root} maxWidth="xl">
-            <Bread path={["Blog", "Sample", "Contador"]} />
+            <Bread path={["Blog", "Sample", "Counter"]} />
             <p>Contador: {props.contador}</p>
             <button onClick={props.onIncrement}>Incrementar</button>
             <button onClick={props.onDecrement}>Decrementar</button>
