@@ -12,6 +12,6 @@ class AboutContainer extends Component{
     };
 };
 
-const mapDispatchToProps = dispatch => dispatch({type: SET_SITE, payload: "Other"});
+const mapDispatchToProps = dispatch => dispatch({type: SET_SITE, payload: "About"});
 
 export default connect(null, mapDispatchToProps)(AboutContainer);

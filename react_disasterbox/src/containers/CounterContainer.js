@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { INCREMENT, DECREMENT} from '../actions/CounterActions';
 import { SET_SITE } from '../actions/LoadedSiteActions';
-import Counter from '../components/counter';
+import Counter from '../components/blog/samples/counter';
 
 class CounterContainer extends Component{
 

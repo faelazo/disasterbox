@@ -33,12 +33,15 @@ const useStyles = makeStyles(theme => ({
         fontWeight: 'bold',
         fontSize: 20,
         paddingRight: 5,
+    },
+    bread: {
+        marginLeft: 20,
     }
 }));
 
 const HeaderHome = () => {
     const classes = useStyles();
-
+    
     return (
         <Box className={classes.rootHeader}>
             <AppBar position="static" className={classes.bar}>
@@ -53,7 +56,7 @@ const HeaderHome = () => {
                         </SvgIcon>
                         <Hidden mdDown>Home</Hidden>
                     </MenuItem>
-                    <MenuItem className={classes.options} component={NavLink} to={'/counter'}>
+                    <MenuItem className={classes.options} component={NavLink} to={'/blog'}>
                         <SvgIcon>
                             <path d="M20.71,4.04C21.1,3.65 21.1,3 20.71,2.63L18.37,0.29C18,-0.1 17.35,-0.1 16.96,0.29L15,2.25L18.75,6M17.75,7L14,3.25L4,13.25V17H7.75L17.75,7Z" />
                         </SvgIcon>

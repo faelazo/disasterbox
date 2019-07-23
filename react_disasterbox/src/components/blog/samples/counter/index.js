@@ -4,11 +4,12 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme => ({
     root: {
-        position: "relative",
-        float: "left",
+        marginTop: 100,
+        marginBottom: 60,
+        justifyContent: 'center',
+        flexWrap: 'wrap',
     }
 }))
-
 
 const Counter = (props) => {
 
