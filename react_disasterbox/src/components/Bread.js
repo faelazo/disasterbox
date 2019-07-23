@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
+import './styles.css';
 
 const useStyles = makeStyles(theme => ({
     root: { 
@@ -20,7 +21,7 @@ const makeLinks = (props) => {
                 path += "/" + item.toLowerCase();
                 
                 return(
-                    <Link key={item+"00"} to={path} style={{ textDecoration: 'none' }}>
+                    <Link key={item+"00"} to={path} className="breadLinks">
                         {item}
                     </Link>
                 )
